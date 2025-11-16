@@ -1,0 +1,91 @@
+/* Modern Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: #F5F6FA;
+    color: #222;
+}
+
+/* Main Content */
+#main {
+    transition: margin-left 0.3s;
+    padding: 16px;
+    margin-left: 0;
+}
+
+/* Toggle Button */
+.toggle-btn {
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #0F3460;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    background-color: #1A1A2E;
+    padding-top: 20px;
+    transition: 0.3s;
+}
+
+.sidebar.open {
+    width: 250px;
+}
+
+/* Logo */
+.sidebar .logo {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Links */
+.sidebar a {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #E0E0E0;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: rgba(79, 111, 176, 0.2);
+    border-radius: 4px;
+}
+
+.sidebar a i {
+    margin-right: 12px;
+    min-width: 20px;
+    text-align: center;
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+    .sidebar {
+        width: 0;
+    }
+
+    .sidebar.open {
+        width: 200px;
+    }
+
+    #main {
+        margin-left: 0;
+    }
+}

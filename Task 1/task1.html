@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="sidebar" class="sidebar">
+        <div class="logo">DASHBOARD</div>
+
+        <a href="#"><i class="fas fa-chart-line"></i> Overview</a>
+        <a href="#"><i class="fas fa-clipboard-list"></i> Tasks</a>
+        <a href="#"><i class="fas fa-folder"></i> Projects</a>
+        <a href="#"><i class="fas fa-bell"></i> Notifications</a>
+        <a href="#"><i class="fas fa-sign-out-alt"></i> Sign Out</a>
+    </div>
+
+    <div id="main">
+        <button class="toggle-btn" onclick="toggleSidebar()">
+            <i class="fas fa-bars"></i> Menu
+        </button>
+
+        <h1>Responsive Sidebar Interface</h1>
+        <p>
+            This layout includes a collapsible sidebar. Click the menu button
+            to open or close it.
+        </p>
+    </div>
+
+<script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        const main = document.getElementById('main');
+
+        const open = sidebar.classList.toggle('open');
+        main.style.marginLeft = open
+            ? (window.innerWidth > 600 ? '250px' : '200px')
+            : '0';
+    }
+</script>
+
+</body>
+</html>
