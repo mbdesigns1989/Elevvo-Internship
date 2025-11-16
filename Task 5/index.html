@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aether - The Cognitive Workspace</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .rounded-lg, .rounded-full, .rounded-md, .rounded-xl { border-radius: 0.5rem; }
+  </style>
+</head>
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
+
+  <!-- Navbar -->
+  <header class="flex justify-between items-center px-6 py-4 shadow-md dark:shadow-gray-700 sticky top-0 bg-white dark:bg-gray-900 z-10">
+    <h1 class="text-2xl font-bold">Aether</h1>
+    <!-- Navigation Links -->
+    <nav class="hidden sm:block">
+        <a href="#features" class="mx-3 hover:text-cyan-400 transition">Features</a>
+        <a href="#testimonials" class="mx-3 hover:text-cyan-400 transition">Reviews</a>
+        <a href="#pricing" class="ml-3 hover:text-cyan-400 transition">Pricing</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-20 px-6 bg-gradient-to-r from-teal-600 to-cyan-800 text-white shadow-2xl">
+    <h2 class="text-4xl md:text-6xl font-extrabold mb-4">Unify Intelligence. Eliminate the Workflow.</h2>
+    <p class="max-w-xl mx-auto text-lg mb-6 opacity-90">
+      **Aether** uses proprietary Cognitive AI to connect your tools, automate decisions, and synthesize information in real time. Work smarter, not harder.
+    </p>
+    <a href="#pricing" class="bg-white text-teal-700 font-bold px-8 py-4 rounded-xl shadow-2xl hover:bg-gray-100 transition duration-300 transform hover:scale-105">
+      Access the Beta
+    </a>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-16 px-6 max-w-6xl mx-auto text-center">
+    <h3 class="text-3xl font-bold mb-12">Built on Cognitive AI.</h3>
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="p-6 border border-teal-300 rounded-xl dark:border-gray-700 shadow-lg hover:shadow-xl transition duration-300">
+        <div class="text-4xl mb-4 text-cyan-500">🧠</div>
+        <h4 class="text-xl font-semibold mb-2">Autonomous Orchestration</h4>
+        <p>The AI manages task dependencies and delegates actions across all your connected platforms, automatically.</p>
+      </div>
+      <div class="p-6 border border-teal-300 rounded-xl dark:border-gray-700 shadow-lg hover:shadow-xl transition duration-300">
+        <div class="text-4xl mb-4 text-cyan-500">🔗</div>
+        <h4 class="text-xl font-semibold mb-2">Real-time Synthesis</h4>
+        <p>Instantly generate summaries, comprehensive reports, and forecasts from scattered data points across your organization.</p>
+      </div>
+      <div class="p-6 border border-teal-300 rounded-xl dark:border-gray-700 shadow-lg hover:shadow-xl transition duration-300">
+        <div class="text-4xl mb-4 text-cyan-500">🛡️</div>
+        <h4 class="text-xl font-semibold mb-2">Zero-Latency Mesh</h4>
+        <p>Secure, instantaneous synchronization ensures every device and team member operates on the same page globally.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-16 bg-gray-50 dark:bg-gray-800 px-6">
+    <h3 class="text-3xl font-bold text-center mb-12">The Future of Work is Here.</h3>
+    <div class="max-w-5xl mx-auto grid gap-8 md:grid-cols-3">
+      <div class="p-6 bg-white dark:bg-gray-900 rounded-xl shadow-2xl border-t-4 border-cyan-500">
+        <p class="italic text-gray-600 dark:text-gray-300">"Aether is the first tool that truly disappears into the background. My team's efficiency jumped by 40%."</p>
+        <h4 class="mt-4 font-semibold text-teal-600 dark:text-cyan-400">Sarah M., CTO of InnovateX</h4>
+      </div>
+      <div class="p-6 bg-white dark:bg-gray-900 rounded-xl shadow-2xl border-t-4 border-cyan-500">
+        <p class="italic text-gray-600 dark:text-gray-300">"The real-time synthesis feature replaced three separate weekly meetings for us. Game changer for decision making."</p>
+        <h4 class="mt-4 font-semibold text-teal-600 dark:text-cyan-400">Daniel R., Head of Product</h4>
+      </div>
+      <div class="p-6 bg-white dark:bg-gray-900 rounded-xl shadow-2xl border-t-4 border-cyan-500">
+        <p class="italic text-gray-600 dark:text-gray-300">"Finally, a secure workspace that feels like it's anticipating my needs, not just tracking them. Seamless integration."</p>
+        <h4 class="mt-4 font-semibold text-teal-600 dark:text-cyan-400">Aisha K., Consultant</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-16 px-6 text-center">
+    <h3 class="text-3xl font-bold mb-12">Clear Paths to Intelligence</h3>
+    <div class="max-w-4xl mx-auto grid gap-8 md:grid-cols-3">
+      <div class="border rounded-xl p-8 dark:border-gray-700 shadow-md">
+        <h4 class="text-xl font-semibold mb-2 text-teal-600 dark:text-cyan-400">Core</h4>
+        <p class="text-4xl font-extrabold mb-4">$0<span class="text-base font-normal">/mo</span></p>
+        <p>Essential AI tools and single-user storage for individual creators.</p>
+        <button class="mt-6 w-full bg-cyan-600 text-white px-4 py-2 rounded-xl hover:bg-cyan-700 transition duration-300 shadow-md">Start Free</button>
+      </div>
+      <div class="border-4 border-cyan-600 rounded-xl p-8 dark:border-teal-400 transform scale-105 shadow-xl bg-teal-50 dark:bg-gray-700">
+        <h4 class="text-xl font-semibold mb-2 text-teal-700 dark:text-cyan-300">Pro Synthesis</h4>
+        <p class="text-4xl font-extrabold mb-4">$49<span class="text-base font-normal">/mo</span></p>
+        <p>Full API access, unlimited data synthesis, and team collaboration features.</p>
+        <button class="mt-6 w-full bg-cyan-600 text-white px-4 py-2 rounded-xl hover:bg-cyan-700 transition duration-300 font-bold shadow-lg">Upgrade to Pro</button>
+      </div>
+      <div class="border rounded-xl p-8 dark:border-gray-700 shadow-md">
+        <h4 class="text-xl font-semibold mb-2 text-teal-600 dark:text-cyan-400">Cognitive Mesh</h4>
+        <p class="text-4xl font-extrabold mb-4">Custom</p>
+        <p>Tailored AI models, dedicated support, and advanced security for enterprises.</p>
+        <button class="mt-6 w-full bg-cyan-600 text-white px-4 py-2 rounded-xl hover:bg-cyan-700 transition duration-300 shadow-md">Request Demo</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-r from-teal-600 to-cyan-800 text-white text-center shadow-2xl mt-8">
+    <h3 class="text-3xl font-bold mb-4">Ready to Break Free From Workflow Chaos?</h3>
+    <p class="mb-8 max-w-lg mx-auto opacity-90">Join the pioneering wave of professionals leveraging true autonomous intelligence to reshape their work day.</p>
+    <a href="#pricing" class="bg-white text-teal-700 font-bold px-10 py-5 rounded-xl shadow-xl hover:bg-gray-100 transition duration-300 transform hover:scale-105 uppercase tracking-wider">
+      Start Your AI Journey
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center text-gray-500 dark:text-gray-400 border-t dark:border-gray-700">
+    © 2025 Aether Technologies. The Cognitive Workspace.
+  </footer>
+
+</body>
+</html>
