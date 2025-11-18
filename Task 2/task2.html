@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Get in Touch</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <form class="contact-form" id="contactForm">
+            <h2>Get in Touch</h2>
+
+            <label for="fullName">Your Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your name">
+            <div class="error" id="nameError"></div>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com">
+            <div class="error" id="emailError"></div>
+
+            <label for="subject">Topic</label>
+            <input type="text" id="subject" name="subject" placeholder="What is this about?">
+            <div class="error" id="subjectError"></div>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" placeholder="Type your message here..."></textarea>
+            <div class="error" id="messageError"></div>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <dialog id="successDialog">
+            <p>Your message has been sent! We'll get back to you soon.</p>
+            <button id="closeDialog">Close</button>
+        </dialog>
+
+        <script src="script.js"></script>
+    </body>
+</html>
