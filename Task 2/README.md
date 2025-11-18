@@ -1,6 +1,6 @@
 # Task 2: Contact Form
 
-![Screenshot of the project](task2.png)
+![Screenshot of the project](Task2.png)
 
 ## Description
 
